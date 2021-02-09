@@ -22,6 +22,14 @@
       }
     }
   }
+
+  let radioStation = new RadioStation();
+  radioStation
+    .subscribe({user: 'vasya'})
+    .subscribe({user: 'dima'})
+
+  radioStation.notify('radio ga-ga')
+
 </script>
 </body>
 </html>

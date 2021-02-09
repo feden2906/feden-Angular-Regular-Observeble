@@ -16,6 +16,11 @@
       this.users.push(user);
       return this;
     }
+    notify(song) {
+      for (const user of this.users) {
+        console.log(`dear ${user.name}, now play song ${song}`);
+      }
+    }
   }
 </script>
 </body>
